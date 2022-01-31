@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeopardy Past and Present</title>
+</head>
+<body>
+    <main>
+        <section id='game'>
+            <h1 class="title">Jeopardy Past and Present</h1>
+            <div id="container">
+                <p id="question"></p>
+                <p id="value"></p>
+                <p id="year"></p>
+                <p id="answer"></p>
+            </div>
+                <button class="next">Next Question</button>
+            
+            <div class="answer">
+                <div class="answer__form" action="">
+                    <input id="answer__form--text" type="text" name="answer" placeholder="Answer">
+                    <label for="answer">Answer</label>
+                    <button id="check-answer">Check Answer</button>
+                </div>
+            </div>
+        </section>
+        <section id="game-score">
+            <div class="player1">
+                <h3>Team 1 Score</h3>
+                <p id="player1__score"></p>
+                <button onclick="addPointsOne()" class="point-button">Add Points</button>
+            </div>
+            <div class="player2">
+                <h3>Team 2 Score</h3>
+                <p id="player2__score">0</p>
+                <button onclick="addPointsTwo()" class="point-button">Add Points</button>
+            </div>
+        </section>
+    </main>
+   <script src="script.js"></script>
+</body>
+</html>
