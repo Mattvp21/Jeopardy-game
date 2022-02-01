@@ -4,41 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Jeopardy Past and Present</title>
 </head>
 <body>
-    <main>
+    
         <section id='game'>
             <h1 class="title">Jeopardy Past and Present</h1>
             <div id="container">
                 <p id="question"></p>
                 <p id="value"></p>
                 <p id="year"></p>
-                <p id="answer"></p>
+                
             </div>
                 <button class="next">Next Question</button>
-            
+                <p id="answer"></p>
             <div class="answer">
-                <div class="answer__form" action="">
-                    <input id="answer__form--text" type="text" name="answer" placeholder="Answer">
-                    <label for="answer">Answer</label>
-                    <button id="check-answer">Check Answer</button>
+                <div class="answer__button" action="">
+                    <input type="checkbox" id="check-answer">Check Answer</input>
                 </div>
+                
             </div>
+            
         </section>
+        <button onclick="restartGame()" class="new-game">New Game?</button>
         <section id="game-score">
             <div class="player1">
                 <h3>Team 1 Score</h3>
-                <p id="player1__score"></p>
+                <p id="player1__score">0</p>
                 <button onclick="addPointsOne()" class="point-button">Add Points</button>
+                <button onclick="subtractPointsOne()" class="point-button">Subtract Points</button>
+                
             </div>
+            
             <div class="player2">
                 <h3>Team 2 Score</h3>
                 <p id="player2__score">0</p>
                 <button onclick="addPointsTwo()" class="point-button">Add Points</button>
+                <button onclick="subtractPointsTwo()" class="point-button">Subtract Points</button>
             </div>
+            
+                
         </section>
-    </main>
+        
+    
    <script src="script.js"></script>
 </body>
 </html>

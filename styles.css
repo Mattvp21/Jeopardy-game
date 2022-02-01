@@ -1,0 +1,166 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap');
+
+html {
+    font-size: 20px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+body {
+    background-image: url('images/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+   display: flex;
+   flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+
+
+#game {
+    margin-top: 1rem;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 500px;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 10px;
+}
+
+
+
+#container {
+    display: flex;
+    flex-direction: column;
+}
+
+#question {
+    margin-top: 1rem;
+}
+
+#value {
+    margin-top: 1rem;
+}
+
+#year {
+    margin-top: 1rem;
+}
+
+.next {
+    margin-top: 1rem;
+    border-radius: 10px;
+    padding: .5rem;
+    font-family: inherit;
+    font-weight: 700;
+    background-color: red;
+    color: white;
+    box-shadow: 1px;
+    border: none;
+    cursor: pointer;
+}
+
+.point-button {
+    margin-top: .5rem;
+    border-radius: 10px;
+    padding: .5rem;
+    font-family: inherit;
+    font-weight: 700;
+    background-color: red;
+    color: white;
+    box-shadow: 1px;
+    border: none;
+    cursor: pointer;
+}
+
+.new-game{
+    
+    margin-top: .5rem;
+    border-radius: 10px;
+    padding: .5rem;
+    font-family: inherit;
+    font-weight: 700;
+    background-color: red;
+    color: white;
+    box-shadow: 1px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgb(223, 127, 127);
+    
+}
+
+.answer {
+    margin-top: 1rem;
+}
+
+#answer {
+    margin-top: 1rem;
+    display: none;
+}
+
+#game-score {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    text-align: center;
+   
+    color: black;
+    width: 100%;
+    transform: translateY(2rem);
+}
+
+.player1 {
+    padding: 3rem;
+    background-color: white;
+    border-top-right-radius: 50%;
+}
+
+#player1__score {
+   
+    font-size: 2rem;
+}
+
+.player2 {
+    background-color: white;
+    padding: 3rem;
+    margin-left: auto;
+    border-top-left-radius: 50%;
+}
+
+#player2__score {
+    font-size: 2rem;
+    
+}
+
+@media(max-width: 750px) {
+    #game {
+        width: 350px;
+        font-size: .75rem;
+    }
+
+    #game-score {
+        
+        font-size: .75rem;
+    }
+
+    .player1, .player2 {
+        border-radius: 0px;
+        border: 1px solid black;
+    }
+
+    
+}
