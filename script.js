@@ -2,14 +2,11 @@ let data = [];
 let player1Score = [];
 let player2Score = [];
 let questionStoring = {};
-
-let container = document.querySelector('.container')
 let question = document.getElementById('question');
 let value = document.getElementById('value');
 let year = document.getElementById('year');
 let answer = document.getElementById('answer');
 const nextQuestion = document.querySelector('.next')
-
 const checkAnswerButton = document.getElementById('check-answer')
 let score1 = document.getElementById('player1__score')
 let score2 = document.getElementById('player2__score')
@@ -19,10 +16,10 @@ async function getData()  {
     try {
         const response = await fetch(apiUrl)
         data = await response.json()
-        console.log(data)
+        
         grabQuestion()
     } catch (error) {
-        console.log(error, "Uh oh!")
+        
     }
 }
 
