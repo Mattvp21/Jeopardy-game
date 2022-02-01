@@ -39,6 +39,14 @@ body {
     border-radius: 10px;
 }
 
+.answer__button, span {
+    font-size: .75rem;
+}
+
+.answer__button, input {
+    font-size: 1rem;
+}
+
 
 
 #container {
